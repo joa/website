@@ -1,5 +1,6 @@
 FROM golang:alpine as builder
 
+ENV GO111MODULE on
 RUN apk update && apk add git && apk add ca-certificates
 RUN adduser -D -g '' unprivileged
 COPY . $GOPATH/src/github.com/joa/website/
