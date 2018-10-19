@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="//fonts.googleapis.com/css?family=Astloch:700|Raleway:300" rel="stylesheet">
+    <title>Joa Ebert</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            text-indent: 0;
+            list-style: none;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: subpixel-antialiased;
+            font-family: Raleway, sans-serif;
+            font-size: 1.05em;
+            color: #334;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background: #fff radial-gradient(#fff 50%, #eef 200%);
+            width: 100%;
+            height: 100%;
+
+            display: -webkit-box;
+            display: -moz-box;
+            display: -webkit-flexbox;
+            display: -ms-flexbox;
+
+            -webkit-box-pack: center;
+            -webkit-flex-pack: center;
+            -ms-box-pack: center;
+            -ms-flex-pack: center;
+            -moz-box-pack: center;
+
+            -webkit-box-align: center;
+            -webkit-flex-align: center;
+            -ms-box-align: center;
+            -ms-flex-align: center;
+            -moz-box-align: center;
+
+            -webkit-box-orient: vertical;
+            -webkit-flex-direction: column;
+            -moz-box-orient: vertical;
+            -ms-box-orient: vertical;
+            -ms-flex-direction: column;
+
+            perspective: 1000px;
+            -webkit-perspective: 1000px;
+            -moz-perspective: 1000px;
+
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        div.dreid {
+            transform: translateZ(-600px) rotateX(50deg) rotateY(0deg) rotateZ(-30deg);
+            -webkit-transform: translateZ(-600px) rotateX(50deg) rotateY(0deg) rotateZ(-30deg);
+            -moz-transform: translateZ(-600px) rotateX(50deg) rotateY(0deg) rotateZ(-30deg);
+            box-shadow: -4px 8px 8px rgba(8, 0, 32, .06125), -2px 2px 4px rgba(8, 0, 32, .125);
+            -webkit-box-shadow: -4px 8px 8px rgba(8, 0, 32, .06125), -2px 2px 4px rgba(8, 0, 32, .125);
+            -moz-box-shadow: -4px 8px 8px rgba(8, 0, 32, .06125), -2px 2px 4px rgba(8, 0, 32, .125);
+            transition: all 1s;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
+        }
+
+        div.dreid:hover {
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+            -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+            -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+
+        h1 {
+            font-family: Astloch, georgia, times, sans-serif;
+            font-size: 4em;
+            font-weight: bold;
+            color: #3ee;
+            text-shadow: 0px 1px 0px #fff;
+            cursor: default;
+        }
+
+        a {
+            -webkit-transition: all 0.25s ease-out;
+            -moz-transition: all 0.25s ease-out;
+            -ms-transition: all 0.25s ease-out;
+            -o-transition: all 0.25s ease-out;
+
+            padding: 0.25em 0.5em;
+            border-radius: 0.25em;
+
+            background-color: rgba(255, 255, 255, 0.0);
+        }
+
+        a:hover {
+            color: #011;
+            background-color: #3ff;
+        }
+
+        li {
+            display: inline;
+            font-size: 0.75em;
+        }
+
+        li:not(:first-child):before {
+            content: "| ";
+            color: #ccc;
+        }
+
+        .card {
+            position: relative;
+            width: 24em;
+            padding: 5.25em 5em;
+            background-color: #fdfdfd;
+            -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.05);
+        }
+
+        .card:before, .card:after {
+            position: absolute;
+            width: 40%;
+            height: 10px;
+            content: ' ';
+            left: 12px;
+            bottom: 12px;
+            background: transparent;
+            -webkit-transform: skew(-5deg) rotate(-5deg);
+            -moz-transform: skew(-5deg) rotate(-5deg);
+            -ms-transform: skew(-5deg) rotate(-5deg);
+            -o-transform: skew(-5deg) rotate(-5deg);
+            transform: skew(-5deg) rotate(-5deg);
+            -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            z-index: -1;
+        }
+
+        .card:after {
+            left: auto;
+            right: 12px;
+            -webkit-transform: skew(5deg) rotate(5deg);
+            -moz-transform: skew(5deg) rotate(5deg);
+            -ms-transform: skew(5deg) rotate(5deg);
+            -o-transform: skew(5deg) rotate(5deg);
+            transform: skew(5deg) rotate(5deg);
+        }
+    </style>
+</head>
+<body>
+<div class="dreid">
+    <div class="card">
+        <h1>Joa Ebert</h1>
+        <ul>
+            <li>
+                <a href="https://www.make.tv/" target="_blank" title="Work">Work</a>
+            </li>
+            <li>
+                <a href="mailto:joaebert+spam@gmail.com" target="_blank" title="Contact">Contact</a>
+            </li>
+            <li>
+                <a href="https://github.com/joa/" target="_blank" title="GitHub Profile">GitHub</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/joa" target="_blank" title="Twitter Profile">Twitter</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
