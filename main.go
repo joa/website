@@ -31,6 +31,7 @@ var static = map[string]string{
 	"/index.htm":   index,
 	"/index.html":  index,
 	"/keybase.txt": keybase,
+	"/healthz":     "",
 }
 
 func main() {
