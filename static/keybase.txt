@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/joa
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.joa-ebert.com
+  * I am joa (https://keybase.io/joa) on keybase.
+  * I have a public key with fingerprint 5435 66F5 CEFD 8CD1 B9DF  CE65 BD93 DD10 BF67 5F0F
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01203ce7409fa1104ae80d82424971a6f628b3286424934b858d3e39fcee52eb7f8f0a",
+            "fingerprint": "543566f5cefd8cd1b9dfce65bd93dd10bf675f0f",
+            "host": "keybase.io",
+            "key_id": "bd93dd10bf675f0f",
+            "kid": "0101b05b7218dfbb5c49b1b763c030ea4e681c343ebf3e90f0d9f0273ac4a3f3efb60a",
+            "uid": "4406f1ff70f13374485efbba4e7e3c19",
+            "username": "joa"
+        },
+        "service": {
+            "hostname": "www.joa-ebert.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1496404548,
+    "expire_in": 157680000,
+    "prev": "aa39941bea928f5889522839de007493c0d133fc960e290e44a8f7ccdbf6bc19",
+    "seqno": 24,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.71
+Comment: https://keybase.io/crypto
+
+yMNtAnicbVJrTFxFGF2gsDy71AClBCRcDQkI27nvezdNQIoWCS0RmrYiZnsfM7vb
+hd1ld1lKKlE0tD8grJSWogQiJm1Eyg+plYe2po+UCrURrJYSQGoQSDDSoiAFCs5i
++8/5M5nznXPmfN/MzYgATajflcaJyO9MRp3f0LXmcs1bZEH2CUK2q5WE4QRhhVsb
+LFGhy220WlTCQACSArQCeQaISCJJwEhQAKpAMRQj8qTEIY4SZJoSOB9AM7LACioN
+aREpELIUlHkkICARaQSy2EzQ6XBabG5syzI0y3GIVSBSBUUlZVHFCo6VVZFWVRLI
+iONZBBAWmu0unwKHkyUX1FvsGMMH41a8/+E/zw1IGbAyT5GCimSZVRhRJmWeoxVA
+AygxkBNIhWZoKCMaigABVUSA4mlJYSQaQ0jmtnKXb9kxDOAQiRAPEEnTPMMILGbI
+2IaHtEKKPqILOm1SKcTsY3aJqEojMOCxKNA3U18Tz4oVFRV6TEiHMnS69Yq9FGsd
+TrvbrthLcNnsdjtcBp/cXenY4kPZ+MzJKFtsKp4jVnig02Wx2wgDiZmK2+KzJhmR
+YwDDMkIaAY87LE5otPgYLM8JAC/fPdCDLSWJFkWGlKEkUgJiBUFkKUqgRRUCwONn
+VICKu0SKyAFIiQAyjCQgXlFUPGb5v25dsMxmJwwUg3NKJuzpsphskrvcCYmq69eK
+t2n8QjVBgf6+D6YJDYl8/u3qj+g2Mt7dfuHeH7rgvqry6syGRnMcETS1kDLQHqzt
+HyUfrvsXbQ9onrE6Dsm5VHDiQspc+89P7hW37Ejo3HFreeOF4QOvhCQPLd/g98Xf
+Tdeu5aipaTHaY1lLcDD7o0Pg/p1TOd7dfx+uP1k8MKFLUoKy909F3V6/dPG4h7nz
+9Xr+0t7GtbGnwf3m0F9rp6d+DBuLfTWXb0n6uGWF89N99cW+uHSll7Ju04Y525LC
+w+4qm0f+WchefJpQF2GsH4k4mr5zfCI+enji8139Cee+XZnc0FvKnPlFn2irhrtm
+8nTXS8Y62h8HXjSdn5hb/jKg8f331Nn6l355FB+FuJrN5TOG5E9XPaMpnQfVBmv0
+g8Cm5gfdI6eX9WVl2sWfknvZl1G+N8NLhVfE7HrtdKe+oSHrfsweeHm8ML43o6nt
+yfRaVYr+1uTbs+EFka83zV0aqo5tAicLZzd/r+04T8ynzrjKEtsaQwO9Lx6e73uz
+b+pA085ArWn0t57Vs2utiUr0ypWkP6drslFe/35NYYV5T9fj/qx5+0ir/2BGm3E2
+SiwoKp9aS78Ql5RxNaLDnGgdgEuZI6PRu9+o8xID39QZuh92fpB/tdbEVx5MlSt7
+ahZ61m82/1X02dA7IbmLHV53ZesPmuq9N2K7vk87WjpYffnUmd4Pu25Phq12P9qE
+nhV+JTPn3Hh4Hvcv8cy/dw==
+=y9q+
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/joa
+
+==================================================================

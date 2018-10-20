@@ -25,6 +25,14 @@ var cfg = struct {
 	K8sGracePeriod time.Duration `default:"30s"`
 }{}
 
+var static = map[string]string{
+	"/":            index,
+	"/index":       index,
+	"/index.htm":   index,
+	"/index.html":  index,
+	"/keybase.txt": keybase,
+}
+
 func main() {
 	ctx := context.Background()
 	envconfig.MustProcess("JOA", &cfg)
@@ -49,9 +57,13 @@ func main() {
 	os.Exit(0)
 }
 
-func root(w http.ResponseWriter, _ *http.Request) {
-	if _, err := io.WriteString(w, index); err != nil {
-		log.Println("couldn't send response:", err.Error())
+func root(w http.ResponseWriter, r *http.Request) {
+	if data, ok := static[r.URL.Path]; ok {
+		if _, err := io.WriteString(w, data); err != nil {
+			log.Println("couldn't send response:", err.Error())
+		}
+	} else {
+		w.WriteHeader(http.StatusNotFound)
 	}
 }
 
