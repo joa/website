@@ -8,7 +8,7 @@ WORKDIR $GOPATH/src/github.com/joa/website/
 
 RUN go get -d -v
 RUN go generate main.go
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -ldflags="-w -s" -o /go/bin/app
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm GOARM=5 go build -a -installsuffix cgo -ldflags="-w -s" -o /go/bin/app
 
 FROM scratch
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
