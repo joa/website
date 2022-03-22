@@ -7,7 +7,6 @@ COPY . $GOPATH/src/github.com/joa/website/
 WORKDIR $GOPATH/src/github.com/joa/website/
 
 RUN go get -d -v
-RUN go generate main.go
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -a -installsuffix cgo -ldflags="-w -s" -o /go/bin/app
 
 FROM scratch

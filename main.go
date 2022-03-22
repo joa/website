@@ -1,5 +1,3 @@
-//go:generate go run build/embed.go
-
 package main
 
 import (
